@@ -1,4 +1,4 @@
-const host = 'http://127.0.0.1:8000';
+const host = 'http://188.166.169.45';
 import {setUserData, clearUserData} from '../util.js';
 
 async function request(url, options) {
@@ -15,7 +15,6 @@ async function request(url, options) {
                 throw new Error(message)
             }
             const error = await response.json()
-            print(error)
             const message = Object.values(error)[0][0]
             throw new Error(message)
         }
@@ -85,7 +84,6 @@ export async function login(username, password) {
 
 export async function register(username, password) {
     const result = await post('/api-auth/register/', {username, password})
-
 
     return result
 }
