@@ -1,4 +1,4 @@
-const host = 'http://188.166.169.45';
+const host = 'https://django-movies-rest.herokuapp.com';
 import {setUserData, clearUserData} from '../util.js';
 
 async function request(url, options) {

@@ -7,7 +7,7 @@ import { homePage } from "./views/home.js";
 import { loginPage } from './views/login.js';
 import { registerPage } from './views/register.js';
 import { logout } from './api/data.js';
-import { profilePage } from './views/profile.js'
+import { MyMoviesPage } from './views/my-movies.js'
 import { searchPage } from './views/search.js';
 
 
@@ -22,7 +22,7 @@ page('/edit/:id', editPage);
 page('/login', loginPage);
 page('/register', registerPage);
 page('/create', createPage);
-page('/profile', profilePage);
+page('/my-movies', MyMoviesPage);
 page('/search', searchPage);
 
 updateUserNav();
